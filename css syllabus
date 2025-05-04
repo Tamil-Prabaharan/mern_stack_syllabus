@@ -1,0 +1,254 @@
+Introduction
+Types of CSS -1. Inline css 2. Internal css 3. External css
+
+Selector, property,value,declaration(property:value)
+
+Nested Selector(space > + ~),(link - 1. link, 2.hover 3. active 4.visited)
+
+Property: value, background-color, border,border-radious,
+margins top,left,right,bottom,padding, opacity,
+Font- color,size,text transform,alignment,
+background image:url,width,height,rgb,rgba,
+Text decoration, background-repeat:  background-size: cover
+
+Line height,outline,cursor,
+
+Position: static,absolute,fixed,relative,Sticky
+z-index
+
+Animations-animation name,keyframe,duration,dealy,
+iteration count,direction
+
+Transform: translate,rotate,scale,skew
+
+Transition effect. Property,duration,delay,
+timing function:ease in,out,..
+
+Visibility: visible hidden,
+
+Display: none, inline,block,inline-block,flex
+Drop down list.
+list style: list style position, list style image, list style type
+
+Box shadow, double color(linear,radial gradient),
+
+multilist(nested list), table-border collapse
+
+
+examples:
+focus-within
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input
+		{
+			margin-top: 20px;
+			display: block;
+			transition: transform 1.3s;
+			text-align: center;
+			background-color: white;
+		}
+		input:focus-within
+		{			
+			transform: translate(400px) rotate(360deg) scale(1.2,1.3);		
+			background-color: rgb(11,222,199);
+		}
+	</style>
+</head>
+<body>
+<form>
+<h2><center>CSS - Transform Effects </center></h2>
+<h3><center>Developed By Gowthaman Karur </center></h3>
+
+	<input type="text" placeholder="Enter Your Name:">
+	<input type="text" placeholder="Enter age:">
+	<input type="text" placeholder="Enter your Mark:">
+	<input type="text" placeholder="Address">
+	<input type="text" placeholder="City">
+	<input type="text" placeholder="pincode">
+
+</form>
+</body>
+</html>
+=============
+nested list
+=============
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		ol li ul
+		{
+			display: none;
+		}
+		ol li:hover ul
+		{
+			display: block;
+		}
+		ol
+		{
+			display: inline-block;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<ol>
+		<li>January</li>		
+		<li>February
+			<ul>
+				<li>sunday</li>
+				<li>monday</li>
+				<li>tuesday</li>							
+			</ul>
+		</li>		
+
+		<li>March</li>
+		<li>April</li>
+		<li>May
+				<ul>
+				<li>wednesday</li>
+				<li>thursday</li>
+				<li>friday</li>								
+				<li>Saturday</li>								
+			</ul></li>
+		<li>June</li>
+	</ol>
+</body>
+</html>
+========================
+	<style type="text/css">
+		#outdiv
+		{			
+/*			display: inline-block;			*/
+			display: flex;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="outdiv">
+		<div id="indiv1">
+			<font>font1</font>
+			<font>font1</font>
+			<font>font3</font>
+			<font>font4</font>
+		</div>
+		<div id="indiv2">
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+		</div>
+		<div id="indiv2">
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+		</div>
+		<div id="indiv2">
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+			<font>font1</font>
+		</div>
+
+	</div>
+
+</body>
+//========================drop down(multile menu in nav bar) ==============
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		a
+		{
+			text-decoration: none;
+		}
+		#menuitems a
+		{
+			display: block;
+/*			color:white;*/
+		}
+		#menu #menuitems
+		{
+			display: none;
+		}
+		#menu:hover #menuitems
+		{
+			display: block;
+		}
+		#menu
+		{
+			display: inline-block;
+			background-color: green;
+		}
+/*	Extra	*/
+		button
+		{
+			border-radius: 15px;
+			border:3px solid green;
+		}
+		button:hover{
+			background-color: yellow;
+			cursor: pointer;
+		}
+		#menuitems a:hover
+		{
+			color:red;
+			background-color: yellow;
+		}
+		nav
+		{
+			background-color: pink;			
+			height: 26px;			
+			display: flex;
+		}
+
+
+	</style>
+</head>
+<body>
+	<nav>
+	<div id="menu">
+		<button>clickme</button>
+		<div id="menuitems">
+				<a href="#">menu1</a>
+				<a href="#">menu2</a>
+				<a href="#">menu3</a>
+				<a href="#">menu4</a>
+				<a href="#">menu5</a>
+		</div>
+	</div>
+	<div id="menu">
+		<button>clickme</button>
+		<div id="menuitems">
+				<a href="#">menu1</a>
+				<a href="#">menu2</a>
+				<a href="#">menu3</a>
+				<a href="#">menu4</a>
+				<a href="#">menu5</a>
+		</div>
+	</div>
+	<div id="menu">
+		<button>clickme</button>
+		<div id="menuitems">
+				<a href="#">menu1</a>
+				<a href="#">menu2</a>
+				<a href="#">menu3</a>
+				<a href="#">menu4</a>
+				<a href="#">menu5</a>
+		</div>
+	</div>
+</nav>
+</body>
+</html>
