@@ -1,0 +1,21 @@
+Introduction to Mongodb
+Mongodb Environment Setup
+Mongodb Create Database/Select current Database
+Mongodb Create Collections(tables)
+Mongodb Drop Collections(delete)
+Mongodb Drop Database
+Mongodb Read Operations(select or view collection values)
+Mongodb Sort (Ascending or Descending)
+Mongodb Write Operations (insert-single and mulitple documents)
+Mongodb Update command
+Mongodb Remove Row values
+Mongodb Projection(show limited fields or columns)
+Data Modeling
+Mongodb Limt and skip method
+Mongodb Administration(backup and restore)
+Mongodb Index
+mongodb Storage - find total no. of records,storage size
+Mongodb Schema  - mongoose library
+Mongodb Security - ,,
+extra:
+query based (filter)
